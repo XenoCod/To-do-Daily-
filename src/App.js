@@ -34,7 +34,7 @@ function App() {
   const addTodo = (title, desc) => {
     console.log(title, desc)
     let no;
-    if (todos.length == 0) {
+    if (todos.length === 0) {
       no = 0;
     }
     else {
