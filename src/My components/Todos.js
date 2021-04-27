@@ -13,7 +13,7 @@ export const Todos = (props) => {
        <div className="container my-3" style={myStyle}>
            <h3 className="text-center my-3">Todo's List</h3>
            {/* Display no todos to display when there are no lis */}
-           {props.todos.length==0?"No Todos to display":
+           {props.todos.length===0?"No Todos to display":
            props.todos.map((todo)=>{
                return <TodoItem todo={todo} key={todo.no} onDelete={props.onDelete}/>
            })
